@@ -1,13 +1,11 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _isupper - check for upper case letter
- * @c : character to check the case
- * Return:0 or 1
- */
-
+* _isupper -> this is a function to check upper case alphas
+* @c: an integer paramer
+* Return: something but success
+*/
 int _isupper(int c)
 {
-	return (c >= 65 && c <= 90);
-
+	return (c >= 'A' && c <= 'Z');
 }

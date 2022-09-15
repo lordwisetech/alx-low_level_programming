@@ -1,23 +1,16 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_most_numbers - prints numbers
- * Return:0
- */
-
+* print_most_numbers -> this prints most numbers
+*/
 void print_most_numbers(void)
 {
-	char n = 0;
+	int x;
 
-	while (n <= 9)
+	for (x = 0; x < 10; x++)
 	{
-		if (n != 2 && n != 4)
-		{
-			_putchar('0' + n);
-		}
-
-		n++;
+		if (x != 2 && x != 4)
+			_putchar(x + '0');
 	}
 	_putchar('\n');
-
 }
