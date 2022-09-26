@@ -1,17 +1,20 @@
-#include "holberton.h"
-/**
- * *string_toupper - capitalize a string
- * @str: pointer
- * Return: capitalzied string
-*/
+#include "main.h"
 
-char *string_toupper(char *str)
+/**
+ * string_toupper -  changes all lowercase letter of a string to uppercase.
+ * @n: cadena de caracteres.
+ *
+ * Return: nothing.
+ */
+
+char *string_toupper(char *n)
 {
-int i;
-for (i = 0; str[i] != '\0'; i++)
-{
-	if (str[i] <= 'z' && str[i] >= 'a')
-		str[i] -= 32;
-}
-return (str);
+	int i;
+
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		if (n[i] >= 'a' && n[i] <= 'z')
+		n[i] = (int)n[i] - 32;
+	}
+	return (n);
 }

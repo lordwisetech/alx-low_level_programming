@@ -1,1 +1,1 @@
-# Learning Pointers, arrays and strings in C
+C programming language
